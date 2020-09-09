@@ -3294,6 +3294,7 @@ dependencies = [
  "metrics",
  "metrics-runtime",
  "once_cell",
+ "pin-project",
  "rand 0.7.3",
  "serde",
  "tempdir",
