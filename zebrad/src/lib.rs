@@ -23,6 +23,8 @@
 // https://github.com/tokio-rs/tracing/issues/553
 #![allow(clippy::cognitive_complexity)]
 
+#![type_length_limit="1173664"]
+
 #[macro_use]
 extern crate tracing;
 
