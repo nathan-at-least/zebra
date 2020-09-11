@@ -31,7 +31,7 @@ fn merkle_crh_sprout(left: [u8; 32], right: [u8; 32]) -> [u8; 32] {
     let mut block = GenericArray::<u8, U64>::default();
 
     block.as_mut_slice()[0..32].copy_from_slice(&left[..]);
-    block.as_mut_slice()[32..63].copy_from_slice(&right[..]);
+    block.as_mut_slice()[32..64].copy_from_slice(&right[..]);
 
     sha2::compress256(&mut state, &[block]);
 
